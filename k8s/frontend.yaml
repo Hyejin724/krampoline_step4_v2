@@ -15,7 +15,7 @@ spec:
       containers:
         - name: frontend
           # 여러분의 frontend image 주소를 입력해주세요.
-          image: krmp-d2hub-idock.9rum.cc/dev-test/repo_a15a0d7a955a
+          image: krmp-d2hub-idock.9rum.cc/dev-test/repo_3807cff829bb
 ---
 apiVersion: v1
 kind: Service
@@ -25,5 +25,5 @@ spec:
   selector:
     app: frontend
   ports:
-    - port: 3000
-      targetPort: 3000
+    - port: 5173
+      targetPort: 5173
