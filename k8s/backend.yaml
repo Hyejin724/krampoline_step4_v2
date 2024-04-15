@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: hyejin724/nalsee::latest
+          image: hyejin724/nalsee:latest
           env:
             - name: TZ
               value: Asia/Seoul
