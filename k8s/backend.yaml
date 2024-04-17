@@ -19,24 +19,24 @@ spec:
               value: Asia/Seoul
             - name: DATABASE_URL
               value: jdbc:mariadb://mariadb:3306/nalsee
-          volumeMounts:
-          - name: nalsee
-            mountPath: /home/gradle/project/src/main/resources/application-kram.yml
-            subPath: application-kram.yml
-          - name: nalsee
-            mountPath: /home/gradle/project/src/main/resources/application.yml
-            subPath: application.yml
+          # volumeMounts:
+          # - name: nalsee
+          #   mountPath: /home/gradle/project/src/main/resources/application-kram.yml
+          #   subPath: application-kram.yml
+          # - name: nalsee
+          #   mountPath: /home/gradle/project/src/main/resources/application.yml
+          #   subPath: application.yml
           resources:
             requests:
               memory: 1Gi
       readinessProbe:
         httpGet:
           path: /api/test
-          port: 8080
-      volumes:
-      - name: nalsee
-        secret:
-          secretName: my-secret
+      #     port: 8080
+      # volumes:
+      # - name: nalsee
+      #   secret:
+      #     secretName: my-secret
 ---
 apiVersion: v1
 kind: Service
