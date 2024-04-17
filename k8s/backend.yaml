@@ -21,8 +21,8 @@ spec:
               value: jdbc:mariadb://mariadb:3306/nalsee
           volumeMounts:
           - name: nalsee
-            mountPath: /home/gradle/project/src/main/resources/application.yml
-            subPath: application.yml
+            mountPath: /home/gradle/project/src/main/resources/application-secret.yml
+            subPath: application-secret.yml
           resources:
             requests:
               memory: 1Gi
