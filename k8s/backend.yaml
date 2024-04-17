@@ -23,9 +23,6 @@ spec:
           - name: nalsee
             mountPath: /home/gradle/project/src/main/resources/application-kram.yml
             subPath: application-kram.yml
-          - name: nalsee
-            mountPath: /home/gradle/project/src/main/resources/application.yml
-            subPath: application.yml
           resources:
             requests:
               memory: 1Gi
